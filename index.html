@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Astronomy Picture of the Day</h1>
+        <form id="date-form">
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Get Picture</button>
+        </form>
+        <div id="apod-container">
+            <h2 id="apod-title"></h2>
+            <p id="apod-date"></p>
+            <img id="apod-image" src="" alt="Astronomy Picture of the Day">
+            <p id="apod-explanation"></p>
+            <button id="save-favorite">Save to Favorites</button>
+        </div>
+        <h2>Favorites</h2>
+        <div id="favorites-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
