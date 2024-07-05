@@ -28,5 +28,17 @@ making branch
  ![Screenshot (693)](https://github.com/90541113039/mtm6302-Capstone-90541113039/assets/142064375/08f6fee1-595f-48f8-8dce-4ef6ce4c1b4e)
 
 
+ making mockup - Desktop 
+
+ ![Screenshot (691)](https://github.com/90541113039/mtm6302-Capstone-90541113039/assets/142064375/34e0ae5b-7cd6-4257-9784-23dd126e8d84)
+
+
+ mobile view and tablet view
+
+ ![Screenshot (692)](https://github.com/90541113039/mtm6302-Capstone-90541113039/assets/142064375/fd3ffd48-405c-4bb3-aab7-aa9064c4f00c)
+
+
+
+
 
 
