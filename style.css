@@ -1,163 +1,94 @@
-* {
-    box-sizing: border-box;
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0; 
-}
-
-header {
-    position: relative;
-    background-image: url('space image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    color: white;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.top-navigation {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.top-navigation ul {
-    list-style-type: none;
-}
-
-.top-navigation ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.top-navigation ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease; 
-}
-
-.top-navigation ul li a:hover {
-    color: #ffd700; 
-}
-
-.header-content {
+    background: linear-gradient(135deg, #fef9f3, #f1f5f9); /* Soft pastel gradient */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    text-align: center;
 }
 
-.header-left {
-    margin-bottom: 20px;
-}
-
-.left-image {
+/* Header and Footer styles */
+header, footer {
     width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.header-text {
-    max-width: 600px;
-    margin: 20px auto; 
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.1); 
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.header-text h1 {
-    font-size: 2.5rem; 
-    margin-bottom: 10px;
-}
-
-.header-text p {
-    font-size: 1.1rem; 
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
-    clear: both;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f3b0c3; /* Soft pastel pink */
+    color: #4a4a4a; /* Dark grey for contrast */
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.footer-container {
+/* Main container for Pokemon */
+#pokemon-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
 }
 
-.subscribe-container,
-.social-media-container {
-    margin-bottom: 40px; 
+/* Pokemon card styles */
+.pokemon-card {
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
+    width: 180px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.subscribe-container input[type="email"],
-.subscribe-container button {
-    padding: 12px; 
-    font-size: 16px;
+.pokemon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-card h3 {
+    font-size: 1.2em;
+    color: #5e5e5e; /* Soft grey for text */
+    margin: 10px 0;
+}
+
+/* Button styles */
+button {
+    background-color: #d4a5a5; /* Soft pastel pink */
     border: none;
-    margin-right: 10px;
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
     border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.subscribe-container button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+button:hover {
+    background-color: #b28d8d; /* Slightly darker pink */
 }
 
-.social-media-container ul {
-    list-style-type: none;
-    padding: 0;
+/* Load more button */
+#load-more {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #a8dadc; /* Soft pastel teal */
+    color: #ffffff;
 }
 
-.social-media-container ul li {
-    display: inline-block;
-    margin: 0 10px; 
+#load-more:hover {
+    background-color: #8ac5d2; /* Slightly darker teal */
 }
 
-.social-media-container ul li a img {
-    width: 40px; 
-    border-radius: 50%; 
-    transition: transform 0.3s ease; 
-}
-
-.social-media-container ul li a img:hover {
-    transform: scale(1.2); 
-}
-
-@media (min-width: 768px) {
-    .header-content {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .header-text,
-    .header-left {
-        flex: 1;
-        max-width: 50%;
-    }
-
-    .header-text {
-        margin: 20px;
-        padding: 30px; 
-    }
+/* Footer text */
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }
